@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iloSIb8sj1h6Eomfu",
+      });
+   })();
+</script>
+
+  <title>Adi Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Aditya Gupta</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aditya941122@gmail.com" class="contact-link">aditya941122@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 9410661557</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Feb 23, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>kanpur, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+        <li class="social-item">
+         <a href="https://leetcode.com/u/Adii9411/" class="social-link">
+            <img src="https://leetcode.com/static/images/LeetCode_logo.png" alt="LeetCode Logo" class="social-icon">
+         </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/adityagupta54/" class="social-link">
+             <img src="https://logodix.com/logo/79657.png" alt="Linkedin Logo" class="social-icon">
+          </a>
+         </li>
+         
+          <li class="social-item">
+            <a href="https://www.facebook.com/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I Aditya Gupta, a passionate and creative software developer.
+             I specialize in building scalable, secure, and high-performance software that deliver seamless user experiences.
+             My expertise spans across various technologies, including Java, C++, C#, SQL and modern web frameworks like Flutter and Github.
+          </p>
+
+          <p>
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  As a software developer, I create modern, high-quality designs software with professional precision and efficient code.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                
+High-quality development of websites with attention to detail and optimal performance.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Development of applications for Android with a focus on quality and performance.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Problem solver</h4>
+
+                <p class="service-item-text">
+                  Use my free time to solve different problems across various platforms like Leetcode, GFG, Codechef.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Major Projects</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vendura</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Launched a comprehensive website featuring three main functionalities: 
+                    online food orders, reservation  capabilities for tables and events; optimized site speed resulting
+                     in load times under two seconds across all devices used frequently among customers.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>BOB(bank of Bharat)</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    A Banking System built using the .NET Framework would typically 
+                    include several core features designed to manage customer accounts, 
+                    transactions, and financial operations securely and efficiently.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stipator</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                     Developed a mobile application aimed at enhancing women’s safety by providing real-time location sharing,
+                    emergency alerts, and safety features.
+                     Led the design and architecture of the app, focusing on location-based services, responsive user interface, and
+                    seamless user experience.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">2022-24</time>
+
+              <div data-modal-text>
+                <p>
+                 
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pranveer Singh Institute of Technology</h4>
+
+              <span>2023-2025</span>
+
+              <p class="timeline-text">
+                Master's of Computer Application(MCA)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dr. Bhimrao Ambedkar University, Agra</h4>
+
+              <span>2020-2023</span>
+
+              <p class="timeline-text">
+                Bachelor's of Computer Application(BCA)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">S.M.K Senior Secondary Public School</h4>
+
+              <span>2018-2020</span>
+
+              <p class="timeline-text">
+                Highschool & Intermediate
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gauravgo Games technology</h4>
+
+              <span>Feb 2024-2024</span>
+
+              <p class="timeline-text">
+                Designed and develope  websites and WebApp using HTML, CSS, JavaScript, and React, resulting in a
+                30% increase in website traffic and a 25% increase in user engagement.
+                Resolved recurring bugs through effective debugging techniques in collaboration with cross-functional teams,
+ ensuring the successful deployment of web applications with zero downtime during launch phases.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer</h4>
+
+              <span> Dec 2023-march 2024</span>
+
+              <p class="timeline-text">
+                Collaborated with cross-functional teams including designers, QA engineers, 
+                and product managers to develop high-quality software solutions.
+Designed and developed software systems, ensuring scalability, performance, and security using different technologies 
+Implemented efficient algorithms and data structures to solve complex business problems, optimizing the performance of applications by 30%.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">S.R.K college of Computer Science</h4>
+
+              <span>2021-2023</span>
+
+              <p class="timeline-text">
+                As a Coordinator
+                Provided mentorship and guidance to students, assisting them with academic concerns and career planning.
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Key Achievements</h3>
+
+<ul class="skills-list content-card">
+
+  <li class="skills-item">
+
+    <div class="title-wrapper">
+      <h5 class="h5">Solved 400+ Problems on LeetCode: </h5>
+      <p class="achievement-description" style="color:#FAD9B0;">Demonstrated advanced problem-solving skills by completing 400+ algorithm challenges across diverse categories.</p>
+    </div>
+
+  </li>
+
+  <li class="skills-item">
+
+    <div class="title-wrapper">
+      <h5 class="h5">Five-Star Rating on HackerRank; </h5>
+      <p class="achievement-description" style="color:#FAD9B0;">Achieved top rank for proficiency in coding challenges, reflecting strong programming knowledge and competitive skills.</p>
+    </div>
+
+  </li>
+
+  <li class="skills-item">
+
+    <div class="title-wrapper">
+      <h5 class="h5">Certified in GitHub Project Management (LinkedIn): </h5>
+      <p class="achievement-description" style="color:#FAD9B0;">Earned certification in project management using GitHub, ensuring effective collaboration and version control in software development.</p>
+    </div>
+
+  </li>
+
+  <li class="skills-item">
+
+    <div class="title-wrapper">
+      <h5 class="h5">Certified Software Engineer (HackerRank): </h5>
+      <p class="achievement-description" style="color:#FAD9B0;">Gained professional certification for software engineering expertise through practical coding assessments and real-world problem-solving.</p>
+    </div>
+
+  </li>
+
+</ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://vendurabyadi.netlify.app/" target="_blank" rel="noopener noreferrer">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/venduracrop.png" alt="finance" loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Vendura</h3>
+            
+                <p class="project-category">Web development</p>
+            
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio1.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portfolio</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+           
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stipator logo.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stipator</h3>
+
+                <p class="project-category">Android Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ATM management system</h3>
+
+                <p class="project-category">Software</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="All">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BOB(Bank of Bharat)</h3>
+
+                <p class="project-category">Web Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.geeksforgeeks.org/full-stack-developer-roadmap/" download="Full stack in 45 Days" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/full.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">De</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">updated, 2025</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Full stack in 45 days</h3>
+            
+                  <p class="blog-text">
+                    Becoming proficient in full-stack development in 45 days is an ambitious goal, but with focused learning and hands-on practice,
+                    you can make significant progress. Here's a 45-day roadmap for you to get started:
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+            
+            
+
+            <li class="blog-post-item">
+              <a href="https://inspiredresume.com/career-advice/interview/top-10-tricky-managerial-round-interview-questions-and-answers/" download="" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/OIP.jpeg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">De</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">updated, 2025</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Top 10 Interview Questions</h3>
+            
+                  <p class="blog-text">
+                    Preparing for an interview can be a daunting task, especially when you're unsure of what questions to expect. To help you get ready, 
+                    we’ve compiled a list of the top 10 interview questions that are frequently asked in various job interviews. 
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://en.wikipedia.org/wiki/Supercomputer" download="" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/super.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">De</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">Nov 17, 2019</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Super Computers</h3>
+            
+                  <p class="blog-text">
+                    Supercomputers play an important role in the field of computational science,
+                     and are used for a wide range of computationally intensive tasks in various fields, including 
+                    quantum mechanics, weather forecasting, climate research, oil and gas exploration, 
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.forbes.com/sites/bernardmarr/2024/10/14/the-5-most-in-demand-skills-in-2025/" download="" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/skills.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">De</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">updated, 2025</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Demanding sills in 2025</h3>
+            
+                  <p class="blog-text">
+                    In 2025, success in business and careers will hinge not on what you know but on how effectively
+                     you can leverage skills that drive innovation and value creation.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://sanet.st/blogs/udemy1/the_forgotten_art_of_time_and_spacing.4251517.html" download="" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">De</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2022-02-23">09, 2022</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">The Forgotten Art of Spacing</h3>
+            
+                  <p class="blog-text">
+                    If you're a self-taught motion designer like I am, you've probably tried to recreate a lot of animations
+                     to figure out how they were made. No matter how hard I tried in my early learning years to match 
+                    the movement of pieces with the original design, there would always be a significant quality disparity.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.bing.com/maps/embed?h=400&w=500&cp=26.4499~80.3319&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+              width="300" height="500" loading="lazy"></iframe>
+          </figure>
+        </section>
+        
+        
+        
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form id="contactForm" class="form">
+            <div class="input-wrapper">
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Contact No." required>
+            </div>
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button id="submitButton" class="form-btn" type="button" onclick="sendMail()">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        </form>
+        </section>     
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
